@@ -5,10 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>lab09-sarah_halper</title>
 		<style>
-			@font-face {
-		font-family: Honey Mints;
-		src: url(fonts/honey_mints/Honey_Mints.ttf);
-	}
+			
 			body {
 				background-color: #FEF9E7;
 				font-family: 'Open Sans', sans-serif;
@@ -17,8 +14,7 @@
 			h1	{
 				color: #215d5e;
 				text-align: center;
-				font-family: Honey Mints;
-				font-size: 63px;
+				font-size: 43px;
 			}
 
 			p {
@@ -59,12 +55,30 @@
 			    margin-left: 10px;
 		}
 
+		.middle-row {
+			margin: 0 auto;
+			max-width: 1040px;
+		}
+
 		.column-one {
-			float: left	;
+			display: block;
+			float: left;
 			width: 370px;
 			height: 525px;
-			padding: 0px 10px 10px 10px;
-			margin: 20px 10px 40px 20px;
+			padding: 0px 10px 0px 10px;
+			margin: 20px 20px 40px 0px;
+			border-radius: 10px;
+			background-color: rgba(255, 255, 255, 0.7);
+			position: relative;
+		}
+
+		.column-two {
+			display: block;
+			float: left;
+			width: 630px;
+			height: 525px;
+			text-align: center;
+			margin: 20px 0px 40px 0px;
 			border-radius: 10px;
 			background-color: rgba(255, 255, 255, 0.7);
 			position: relative;
@@ -85,16 +99,6 @@
 
 		.website-link:hover {
 			color: #fff;
-		}
-
-		.column-two {
-			float: left	;
-			width: 630px;
-			height: 535px;
-			margin: 20px 20px 40px 10px;
-			border-radius: 10px;
-			background-color: rgba(255, 255, 255, 0.7);
-			position: relative;
 		}
 
 		.bake-video {
@@ -119,11 +123,13 @@
 				<img src="images/baking-logo.png" alt="company-logo" class="logo">
 			</div>
 			<div class="clearfloat"></div>
-			<div class="column-one">
-				<h1>Best <br>Waffles in Town</h1>
-				<h3>Order Your Waffles Today</h3>
-				<p>Hello, we’re a Baking Story, your bakery on the corner. We know you’re always busy. No time for baking. So let us take care of that. Just brows our menu and order away!</p><p>Today's special are waffles. The order include fresh strawberries, blueberris, and whipcream.</p>
-				<a href="https://www.magicinkgraphics.com/abakingstory/" target="_blank" class="website-link">A Baking Story</a>
+			<div class="middle-row">
+				<div class="column-one">
+					<h1>Best <br>Waffles in Town</h1>
+					<h3>Order Your Waffles Today</h3>
+					<p>Hello, we’re a Baking Story, your bakery on the corner. We know you’re always busy. No time for baking. So let us take care of that. Just brows our menu and order away!</p><p>Today's special are waffles. The order include fresh strawberries, blueberris, and whipcream.</p>
+					<a href="https://www.magicinkgraphics.com/abakingstory/" target="_blank" class="website-link">A Baking Story</a>
+				</div>
 			</div>
 			<div class="column-two">
 				<iframe class="bake-video" width="565" height="467" src="https://www.youtube.com/embed/loZ38_Hx6-c" title="Simple Waffles with Just 5 Ingredients | A Baking Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
