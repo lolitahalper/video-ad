@@ -1,0 +1,128 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>lab09-sarah_halper</title>
+		<style>
+			body {
+				background-color: #FEF9E7;
+			}
+
+			h1	{
+				color: #000;
+				text-align: center;
+			}
+
+			p {
+				color: #000;
+				text-align: center;
+			}
+
+			h3 {
+				color: #000;
+				text-align: center;
+			}
+
+			#container {
+				background-image: url("images/waffles.jpg");
+				border: 1px solid #000;
+				border-radius: 10px;
+				width: 1080px;
+				height: 720px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-moz-transform: translateX(-50%) translateY(-50%);
+    			-webkit-transform: translateX(-50%) translateY(-50%);
+    			transform: translateX(-50%) translateY(-50%);
+
+			}
+
+			.top-row {
+				height: 95px;
+				float: left;
+			}
+
+		.logo {
+			    height: 75px;
+			    width: auto;
+			    float: left;
+			    margin-top: 10px;
+			    margin-left: 10px;
+		}
+
+		.column-one {
+			float: left	;
+			width: 370px;
+			height: 525px;
+			padding: 10px;
+			margin: 20px 10px 40px 20px;
+			border-radius: 10px;
+			background-color: rgba(255, 255, 255, 0.6);
+			position: relative;
+		}
+
+		.website-link {
+			text-decoration: none;
+			color: #000;
+			background-color: #68c9ca;
+			border-radius: 15px;
+			padding: 15px;
+			font-size: 20px;
+			position: absolute;
+			bottom: 10%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-30%);
+		}
+
+		.website-link:hover {
+			color: #fff;
+		}
+
+		.column-two {
+			float: left	;
+			width: 630px;
+			height: 545px;
+			margin: 20px 20px 40px 10px;
+			border-radius: 10px;
+			background-color: rgba(255, 255, 255, 0.6);
+			position: relative;
+		}
+
+		.bake-video {
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+		.clearfloat {
+		clear: both;
+	
+	}
+
+
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="top-row">
+				<img src="images/baking-logo.png" alt="company-logo" class="logo">
+			</div>
+			<div class="clearfloat"></div>
+			<div class="column-one">
+				<h1>Best Waffles in Town</h1>
+				<h3>Order Your Waffles Today</h3>
+				<p>Hello, we’re a Baking Story, your bakery on the corner. We know you’re always busy. No time for baking. So let us take care of that. Just brows our menu and order away!</p><p>Today's special are waffles. The order include fresh strawberries, blueberris, and whipcream.</p>
+				<a href="https://www.magicinkgraphics.com/abakingstory/" target="_blank" class="website-link">A Baking Story</a>
+			</div>
+			<div class="column-two">
+				<iframe class="bake-video" width="565" height="467" src="https://www.youtube.com/embed/loZ38_Hx6-c" title="Simple Waffles with Just 5 Ingredients | A Baking Story" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+			<div class="bottom-row"></div>
+		</div>
+	
+	</body>
+	</html>
